@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripcion</title>
+</head>
+<body>
+   <script >
+
+//codigo de javascript para obligar al usuario a leer para inscribrise 
+let aprobacion
+
+while (aprobacion !="ok") {
+   alert("cuando ingrese al aula por favor llevar 3 fotocopias del dni y una de finalizacion de los estudios necesarios")
+   let nombre= prompt("recuerde que el profesor u la misma institucion se va a comunicar con usted, marque ok para continuar ")
+       aprobacion= nombre
+}
+
+     
+
+   </script>
+    <h1> Formulario de inscripcion  </h1>
+
+   <div>
+<!-- creacion del formulario de inscripcion, estaba pensando en realizar algo mas estetico pero creo que esto 
+   como base estaria bien, cualquier arreglo u mejora es bienvenido atte hector 
+    paso a explicar uso el label para guardarlo en caso de tener base de datos y poder conectarlo
+    cambio los tipos dependiendo del caso (ya sea numero,email,texto u un choice)
+     tambien los br toman la funcion de dejar un espacio por cada uno de ellos haya por linea
+    -->
+    <form >  
+
+        <label for="nombre "> nombre completo como figura en el dni </label>
+            <br> <br>
+         <input type="text" id="nombre" placeholder="introduzca su nombre"> 
+            <br>
+        <label for="dni"> numero de dni sin puntos ni espacios  </label>
+            <br> <br>
+          <input type="password" id="dni" placeholder="introduzca su numero de dni"> 
+            <br>
+         <label for="sexo"> sexo tal cual fugura en el dni </label>  
+            <br> 
+          <h4> masculino </h4>
+         <input type="checkbox"  id="sexo" >
+            <br>
+         <h4>femenino</h4>
+            <br>
+         <input type="checkbox" id="sexo">
+            <br>
+         <h4> otrxs</h4>
+         <input type="checkbox" id="sexo">
+         <br> <br>
+         <label for="curso" > indique que curso desea inscribirse </label>
+            <br>
+        <input type="text"  id="curso" placeholder="escriba el nombre del curso" > 
+            <br> 
+         <label for="numero"> coloque un numero de contacto</label> 
+            <br>   
+         <input type="number" id="numero" placeholder="escriba su numero de contacto">
+            <br>
+         <label for="gmail" > deje un email de contacto</label>
+            <br>
+         <input type="email" id="gmail" placeholder="escriba el email de contacto ">
+   
+
+
+
+    
+    
+        </form>
+
+   </div>
+
+    
+</body>
+</html>
